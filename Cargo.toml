@@ -1,0 +1,15 @@
+[package]
+name = "bamstats"
+version = "0.1.0"
+authors = ["Svein Tore Koksrud Seljebotn <s.t.seljebotn@medisin.uio.no>"]
+
+[dependencies]
+rust-htslib = "0.5.2"
+bio = "*"
+
+[profile.dev]
+debug = true
+
+[profile.release]
+debug = true
+opt-level = 3
